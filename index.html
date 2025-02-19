@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="icon" onclick="showDashboard()">📊</div>
+        <div id="dashboard" class="mt-5 d-none">
+            <h1>Teacher Dashboard</h1>
+            <button class="btn btn-primary" onclick="createQuiz()">Create Quiz</button>
+            <div id="quizForm" class="mt-4 d-none">
+                <h2>Create a New Quiz</h2>
+                <form id="quizFormContent">
+                    <!-- Quiz form content will be dynamically added here -->
+                </form>
+                <button class="btn btn-success mt-3" onclick="submitQuiz()">Submit Quiz</button>
+            </div>
+            <div id="analytics" class="mt-5 d-none">
+                <h2>Quiz Analytics</h2>
+                <!-- Analytics content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
